@@ -1,0 +1,278 @@
+% Fyll ut {} øverst. Tomme felt viser hjelpetekst. Bruk LuaLaTeX eller pdfLaTeX.
+\documentclass[10pt,a4paper,landscape]{article}
+
+\ExplSyntaxOn
+\prop_new:N \g_plan_prop
+\NewDocumentCommand{\fyllinn}{m +m}
+  {\prop_gput:Nnn \g_plan_prop {#1} {#2}}
+\ExplSyntaxOff
+% Grunnopplysninger
+\fyllinn{Dato}{19.10.26}
+\fyllinn{Trinn}{VG1}
+\fyllinn{Fag}{1T}
+\fyllinn{Varighet}{2 timer}
+% Kompetansemål
+% Ett mål per \item.
+\fyllinn{Kompetansemål}{%
+  \item forklare forskjellen mellom en identitet, en ligning,
+        et algebraisk uttrykk og en funksjon
+  \item utforske strategier for å løse ligninger, ligningssystemer og
+        ulikheter og argumentere for tenkemåtene sine
+  \item lese og forstå matematiske bevis og utforske og utvikle bevis
+        i relevante matematiske emner
+}
+% Mål og innhold
+% Hva skal elevene kunne, forstå eller mestre etter undervisningen?
+\fyllinn{Læringsmål}{ 
+
+    Eleven skal bli kjent med forkorting av uttrykk av høyere grad. 
+
+
+
+}
+% Hvilke begreper, temaer og ferdigheter skal undervisningen handle om?
+\fyllinn{Faglig innhold}{ Bruke og forstå kvadratsetningene $(a+ b)^2 = a^2 + 2ab + b^2$ . Bli introdusert til egenskapene for andregradsuttrykk i ligninger. Elevene skal også bli kjent med begrepet faktorisering av uttrykk og hvordan dette henger
+sammen med produktregelen der $ a\cdot b = 0 \implies a = 0 \textit{ eller } b=0 $. Eleven skal også kunne faktorisere enkle andregradsuttrykk. }
+% Hvorfor har du valgt disse læringsmålene og dette faglige innholdet?
+\fyllinn{Begrunnelse for mål}{ Elevene har brukt mange undervisningstimer på å utlede første og andre kvadratsetning. De har nå god trening i å gå fra faktorisert form til et utvidet uttrykk. I denne dobbeltimen skal vi prøve å lære elevene hvordan de kan gå fra et utvidet uttrykk til faktorisert form. For å motivere elevene bruker vi produktregelen og ligninger som utgangspunkt, slik at elevene må faktorisere uttrykket for å finne svaret. En av fallgruvene er at produktregelen, som algebraisk sett er et enkelt resultat, kan virke svært abstrakt når vi kombinerer den med faktorisering av andregradsuttrykk.
+}
+% Elevgruppen og vurdering
+% Hvilke forkunnskaper har elevene? Hvilke behov for tilpasning ser du?
+\fyllinn{Læreforutsetninger}{ I denne klassen har elevene man variert bakgrunn da de kommer fra ulike ungdomskoler, sosiale livssituasjon, ulike lærere og ulik praksis. Vi kan dog forvente at de er kjent med ligninger og er kjent med
+regneoperasjoner, men at det vil antageligvis kreve oppfrisking og endring av misforståelser. Det kan også være variasjon i disiplin og utholdenhet, da mange kan ha meget minimal oppmerksomhetsvindu når ting blir vanskelig. Det vil si at det kan
+eksistere svakere elever med både lav utholdenhet og som sliter med grunnleggende regneferdigheter i rommet.   }
+% Hvorfor passer tilpasningene til denne elevgruppen?
+\fyllinn{Begrunnelse for tilpasning}{ 
+
+     % Det er verdt å nevne at dette er et fag som viser store krav til tilegnelse av abstrakt informasjon, og elevene har tatt et aktivt valg å velge dette grunnet utdanningsmuligheter, nyskjerrighet og ambisiøsitet. 
+
+    For å bygge god basis ønsker vi å utfordre eleve å bygge generell utholdenhet på å tilegne seg ny abstrakt informasjon, men samtidig ikke presse de svake elevene for mye slik at de oppnår et stadiet hjelpesløshet for tidlig i undervisningen.
+    Derfor er undervisningen bygget opp ved å gradvis bygge klosser med logiske premisser. Eksempelvis hadde vi progresjonen  i) $4x  = 0$ , $4(x-1)  = 0$, ii)  $x(x-1) = 0$, iii) $ x^2 + x = 0$ og til slutt  iv) $ x^2 + 2x + 1 = 0 $. De sterke
+    elevene bygger også opp forståelsen da de kan utforske nyttigheten av produktregelen og dens begrensninger.        
+}
+% Hvordan får du informasjon om elevenes læring? Hva skal du se etter?
+% Hva skal eventuelt vurderes, og hvordan gir du tilbakemeldinger?
+\fyllinn{Vurdering}{ Vurderingen blir gjort muntlig med elevene. Det blir ogsåspurt kontrollspørsmål kontinuerlig gjennom hele undervisningen. }
+% Hvorfor velger du disse vurderingsformene?
+\fyllinn{Begrunnelse for vurdering}{ Effektiv og sosial måte. Da dette var en undervisning der vi lærte om nye verktøy i matematikk, det vil si å kombinere faktorisering og produktregelen, forventet vi ikke at elevene skulle forstå det dette timen.
+Et av målene var å teste elevenes utholdenhet i det de tilegner seg abstrakt informasjon.       } % Gjennomføring
+% Når skjer de ulike aktivitetene, og hvor lenge varer de?
+\fyllinn{Tidsplan}{ 
+
+}
+% Hva gjør læreren? Hvordan organiseres undervisningen?
+\fyllinn{Lærerens aktiviteter}{
+
+Første time var lette eksempler for å illustrere hva vi skal oppnå. 
+I dette tilfellet progresjonen 
+\begin{enumerate}
+    \item[i)] $\frac{4}{4} = 1$
+    \item[ii)] $\frac{4x}{x} = 4$
+    \item[iii)] $\frac{4(x-1)(x-1)}{x-1} = 4(x-1)$
+\end{enumerate}
+
+Det ble da satt på oppgaven på såkalt vertikal tavle 2 og 2:
+\begin{equation*}
+\frac{x^2 + 2x + 1}{x+1}
+\end{equation*}
+
+ Andre time gikk vi med samme innstilling for å introdusere produktregenel. Og introduserte produktregelen med følgene progresjon.
+
+\begin{enumerate}
+    \item[i)] $ 4x = 0$
+    \item[ii)] $4(x-1) = 0$
+    \item[iii)] $(x-1)(x-1)= 0$
+\end{enumerate}
+Etterpå ble de satt på oppgaver i boka der de skulle jobbe alene med tilsvarende oppgaver. 
+}
+% Hva gjør elevene? Arbeider de alene, i grupper eller i fellesskap?
+\fyllinn{Elevenes aktiviteter}{}
+% Hvilke læremidler og ressurser brukes? F.eks. lærebok og digitale verktøy.
+\fyllinn{Læringsressurser}{}
+% Hvorfor velger du disse arbeidsformene, aktivitetene og ressursene?
+\fyllinn{Begrunnelse for aktiviteter}{
+    Vertikal tavle. at de står sammen i å slite seg gjennom nye oppgaver
+}
+% Veiledning
+% Hva ønsker du veiledning på? Hvilke spørsmål vil du ta opp?
+\fyllinn{Spørsmål til veiledning}{}
+% Felt for veilederens tilbakemeldinger.
+\fyllinn{Veileders kommentarer}{}
+% OPPSETT -- ingen utfylling nedenfor.
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \IfFileExists{phvr8t.tfm}{\usepackage[scaled=0.95]{helvet}}{}
+\else
+  \usepackage{fontspec}
+  \IfFontExistsTF{Arial}{\setsansfont{Arial}}{%
+    \IfFontExistsTF{TeX Gyre Heros}{\setsansfont{TeX Gyre Heros}}{%
+      \setsansfont{Nimbus Sans}}}
+\fi
+\usepackage[landscape,left=11mm,right=12mm,top=17mm,bottom=17mm]{geometry}
+\usepackage{array,xcolor}
+\usepackage{amsmath}
+
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{1.6mm}
+\setlength{\arrayrulewidth}{0.5pt}
+\renewcommand{\arraystretch}{1}
+\raggedright
+
+\newcommand{\felt}[1]{{\color{gray}\normalfont\itshape[#1]}}
+\ExplSyntaxOn
+\NewDocumentCommand{\hent}{m}
+  {\prop_item:Nn \g_plan_prop {#1}}
+\NewDocumentCommand{\visfelt}{m m}
+  {
+    \prop_get:NnN \g_plan_prop {#1} \l_tmpa_tl
+    \tl_if_blank:VTF \l_tmpa_tl {\felt{#2}} {\tl_use:N \l_tmpa_tl}
+  }
+\ExplSyntaxOff
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newsavebox{\celleboks}
+\newcommand{\mincelle}[2]{%
+  \sbox{\celleboks}{\begin{minipage}[t]{\linewidth}\raggedright#2\end{minipage}}%
+  \ifdim\dimexpr\ht\celleboks+\dp\celleboks\relax<#1\relax
+    \begin{minipage}[t][#1][t]{\linewidth}\raggedright#2\end{minipage}%
+  \else\usebox{\celleboks}\fi}
+\newcommand{\etikett}[1]{{\bfseries #1}\par}
+\newcommand{\sporsmal}[1]{{\itshape #1}\par}
+\newlength{\trekolonner}
+\setlength{\trekolonner}{\dimexpr\textwidth-6\tabcolsep-4\arrayrulewidth\relax}
+\newlength{\sekskolonner}
+\setlength{\sekskolonner}{\dimexpr\textwidth-12\tabcolsep-7\arrayrulewidth\relax}
+\newlength{\firekolonner}
+\setlength{\firekolonner}{\dimexpr\textwidth-8\tabcolsep-5\arrayrulewidth\relax}
+
+\begin{document}
+
+% ==================== SIDE 1 ====================
+\vspace*{4mm}
+{\centering\fontsize{16}{19}\selectfont\bfseries UNDERVISNINGSPLAN\par}
+\vspace{7mm}
+
+\begin{tabular}{|P{.16\firekolonner}|P{.22\firekolonner}|P{.13\firekolonner}|P{.49\firekolonner}|}
+\hline
+\mincelle{13mm}{\textbf{Dato:} \hent{Dato}} &
+\textbf{Trinn:} \hent{Trinn} &
+\textbf{Fag:} \hent{Fag} &
+\textbf{Varighet:} \hent{Varighet} \\
+\hline
+\end{tabular}
+
+\vspace{6mm}
+\textbf{Kompetansemål:}
+\vspace{4mm}
+\begin{list}{-}{\setlength{\leftmargin}{12mm}\setlength{\labelsep}{4mm}%
+  \setlength{\topsep}{0pt}\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}}
+  \hent{Kompetansemål}
+\end{list}
+\vspace{19mm}
+
+{\fontsize{9}{10.8}\selectfont
+\begin{tabular}{|P{.218\trekolonner}|P{.443\trekolonner}|P{.339\trekolonner}|}
+\hline
+\mincelle{9mm}{\textbf{Beskrivelse}} &
+\textbf{Dine notater} &
+\textbf{Begrunnelse:} Hvorfor gjør du dette valget? \\
+\hline
+\mincelle{35mm}{\etikett{Mål}
+\sporsmal{Læringsmål: Operasjonalisering av kompetansemål.}
+\vspace{2mm}
+\sporsmal{Kunnskaper, ferdigheter og forståelse som elevene skal utvikle, både faglige og sosiale mål.}
+\vspace{2mm}
+\sporsmal{Faglig innhold.}}
+&
+\etikett{Læringsmål}
+\vspace{2mm}
+\visfelt{Læringsmål}{Hva skal elevene kunne, forstå eller mestre etter undervisningen?}
+\par\vspace{4mm}
+\visfelt{Faglig innhold}{Sentrale begreper og faglig innhold}
+&
+\visfelt{Begrunnelse for mål}{Begrunn valget av læringsmål og faglig innhold.}
+\\
+\hline
+\mincelle{30mm}{\etikett{Læreforutsetninger/Tilpasning}
+\sporsmal{Hvilke forutsetninger har elevene for å lære dette? Hvilke behov for tilpasning ser du?}}
+&
+\visfelt{Læreforutsetninger}{Forkunnskaper, elevgruppe og behov for tilpasning}
+&
+\visfelt{Begrunnelse for tilpasning}{Begrunn hvordan undervisningen tilpasses elevene.}
+\\
+\hline
+\end{tabular}
+}
+
+\newpage
+
+% ==================== SIDE 2 ====================
+{\fontsize{9}{10.8}\selectfont
+\begin{tabular}{|P{.218\trekolonner}|P{.443\trekolonner}|P{.339\trekolonner}|}
+\hline
+\mincelle{29mm}{\etikett{Vurdering og tilbakemelding}
+\sporsmal{Hvordan får du informasjon om elevenes læring? Hva skal du se etter? Hva skal eventuelt vurderes og hvordan?}}
+&
+\visfelt{Vurdering}{Hvordan følger du elevenes læring, og hvordan gir du tilbakemelding?}
+&
+\visfelt{Begrunnelse for vurdering}{Begrunn vurderingsformene og hva de gir informasjon om.}
+\\
+\hline
+\end{tabular}
+}
+
+\vspace{4mm}
+
+% Aktivitetstabellen henter innhold fra del 5 øverst i filen.
+{\fontsize{9}{10.8}\selectfont
+\begin{tabular}{|P{.185\sekskolonner}|P{.065\sekskolonner}|P{.265\sekskolonner}|P{.12\sekskolonner}|P{.11\sekskolonner}|P{.255\sekskolonner}|}
+\hline
+\mincelle{17mm}{\etikett{Arbeidsformer og aktiviteter. Læremidler og læringsressurser.}}
+& \textbf{Tid}
+& \textbf{Hva gjør lærer?}
+& \textbf{Hva gjør elevene?}
+& \textbf{Læringsressurs:}
+& \textbf{Begrunnelse:} \\
+\hline
+\mincelle{45mm}{\sporsmal{Hvem gjør hva? Når? Hvordan vil du organisere elevenes læringsaktiviteter? Hvilke arbeidsformer vil du benytte? (F.eks. presentasjon, individuelt- eller gruppearbeid, utforskende oppgaver, klassesamtale)}
+\vspace{3mm}
+\sporsmal{Hvilke læringsressurser vil du bruke? F.eks. lærebok, digitale ressurser)}}
+& \visfelt{Tidsplan}{Tid}
+& \visfelt{Lærerens aktiviteter}{Lærerens aktiviteter og organisering}
+& \visfelt{Elevenes aktiviteter}{Elevenes aktiviteter}
+& \visfelt{Læringsressurser}{Materiell og ressurser}
+& \visfelt{Begrunnelse for aktiviteter}{Begrunn arbeidsformer, aktiviteter og ressurser.} \\
+\hline
+\end{tabular}
+}
+
+\vspace{8mm}
+
+% Veiledningsfeltet har én ytre ramme som i referansedokumentet.
+\begingroup
+\setlength{\fboxsep}{1.5mm}
+\fbox{\begin{minipage}[t]{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\mincelle{44mm}{%
+\textbf{TIL BRUK I VEILEDNINGSSITUASJONER}
+{\fontsize{9}{11}\selectfont (rubrikkene kan utvides etter behov)}
+\par\vspace{3mm}
+\begin{minipage}[t]{.79\linewidth}\raggedright
+Hva ønsker jeg veiledning på?
+\par\vspace{5mm}
+\visfelt{Spørsmål til veiledning}{Spørsmål og temaer til veiledning}
+\end{minipage}\hfill
+\begin{minipage}[t]{.20\linewidth}\raggedright
+Veileders kommentarer:
+\par\vspace{5mm}
+\visfelt{Veileders kommentarer}{Kommentarer}
+\end{minipage}
+}
+\end{minipage}}
+\endgroup
+
+\end{document}
