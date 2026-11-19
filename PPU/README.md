@@ -16,6 +16,8 @@ Oversikten er oppdatert 19. november 2026.
 
 ## Lokale filer
 
+[Pensumliste og lagret fagstoff](pensum/README.md).
+
 | Fil | Innhold |
 | --- | --- |
 | [Arbeidskrav 1 – PDF](arbeidskrav1/main.pdf) | Lesbar PDF av arbeidskrav 1 |
