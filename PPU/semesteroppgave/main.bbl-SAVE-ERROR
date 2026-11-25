@@ -1,0 +1,105 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{lynum2015matte}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7ff1cb4ff8e98cc69e10467be4b979a}{%
+           family={Lynum},
+           familyi={L\bibinitperiod},
+           given={Sissel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{fullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{bibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorbibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authornamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorfullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{journaltitle}{Adresseavisen}
+      \field{month}{12}
+      \field{title}{Én av tre fikk 1 eller 2 i matte}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
+      \endverb
+      \verb{url}
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{lynum2015matte}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7ff1cb4ff8e98cc69e10467be4b979a}{%
+           family={Lynum},
+           familyi={L\bibinitperiod},
+           given={Sissel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{fullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{bibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorbibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authornamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorfullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{journaltitle}{Adresseavisen}
+      \field{month}{12}
+      \field{title}{Én av tre fikk 1 eller 2 i matte}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
+      \endverb
+      \verb{url}
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

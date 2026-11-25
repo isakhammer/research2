@@ -19,289 +19,85 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
-    \entry{skaalvik2021skolen}{book}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=ce725a2473fc1ea7428d52b7ad832447}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Einar\bibnamedelima M.},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=8a541757d835463f3f5490ae2b0fdf7b}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Sidsel},
-           giveni={S\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Universitetsforlaget}%
-      }
-      \strng{namehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{fullhash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{bibnamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authorbibnamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authornamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authorfullhash}{6948340e9c6d195eb58e86dff5dc1120}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4}
-      \field{title}{Skolen som læringsarena: Selvoppfatning, motivasjon, læring og livsmestring, s. 139, s. 166, s.169}
-      \field{year}{2021}
-    \endentry
-    \entry{skaalvik2026}{book}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=ce725a2473fc1ea7428d52b7ad832447}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Einar\bibnamedelima M.},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=0ebe54e95060bb87c5e2f9e4bc146f09}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Sidsel\bibnamedelima T.},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Universitetsforlaget}%
-      }
-      \strng{namehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{fullhash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{bibnamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authorbibnamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authornamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authorfullhash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{Motivasjon i skolen: Teori, nyere forskning og praktiske implikasjoner, s 50.}
-      \field{year}{2026}
-    \endentry
-    \entry{ucar}{article}{}
+    \entry{lynum2015matte}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b5b0065192a4d723d050d5ce7c5f1b9f}{%
-           family={{University Corporation for Atmospheric Research}},
-           familyi={U\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c7ff1cb4ff8e98cc69e10467be4b979a}{%
+           family={Lynum},
+           familyi={L\bibinitperiod},
+           given={Sissel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{fullhash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{bibnamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authorbibnamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authornamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authorfullhash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \strng{namehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{fullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{bibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorbibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authornamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorfullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Talk Science Primer}
-      \field{urlday}{5}
-      \field{urlmonth}{10}
+      \field{day}{9}
+      \field{journaltitle}{Adresseavisen}
+      \field{month}{12}
+      \field{title}{Én av tre fikk 1 eller 2 i matte}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
       \field{urlyear}{2026}
-      \field{year}{2012}
+      \field{year}{2015}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://scied.ucar.edu/sites/default/files/media/documents/talkscience_primer_excerpt_2.pdf
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
       \endverb
       \verb{url}
-      \verb https://scied.ucar.edu/sites/default/files/media/documents/talkscience_primer_excerpt_2.pdf
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
       \endverb
-    \endentry
-    \entry{werler2024}{book}{}
-      \name{editor}{2}{}{%
-        {{un=0,uniquepart=base,hash=99e442ce4bfa3a258312c26d6701fd4f}{%
-           family={Werler},
-           familyi={W\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef137832544631bbed245bcc46f98377}{%
-           family={Sæverot},
-           familyi={S\bibinitperiod},
-           given={Herner},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Bergen}%
-      }
-      \list{publisher}{1}{%
-        {Fagbokforlaget}%
-      }
-      \strng{namehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{fullhash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{bibnamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editorbibnamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editornamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editorfullhash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{edition}{1}
-      \field{isbn}{978-82-450-4750-9}
-      \field{title}{Pedagogiske handlinger, s.134., s.121}
-      \field{year}{2024}
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
-    \entry{skaalvik2021skolen}{book}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=ce725a2473fc1ea7428d52b7ad832447}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Einar\bibnamedelima M.},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=8a541757d835463f3f5490ae2b0fdf7b}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Sidsel},
-           giveni={S\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Universitetsforlaget}%
-      }
-      \strng{namehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{fullhash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{bibnamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authorbibnamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authornamehash}{6948340e9c6d195eb58e86dff5dc1120}
-      \strng{authorfullhash}{6948340e9c6d195eb58e86dff5dc1120}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4}
-      \field{title}{Skolen som læringsarena: Selvoppfatning, motivasjon, læring og livsmestring, s. 139, s. 166, s.169}
-      \field{year}{2021}
-    \endentry
-    \entry{skaalvik2026}{book}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=ce725a2473fc1ea7428d52b7ad832447}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Einar\bibnamedelima M.},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=0ebe54e95060bb87c5e2f9e4bc146f09}{%
-           family={Skaalvik},
-           familyi={S\bibinitperiod},
-           given={Sidsel\bibnamedelima T.},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Universitetsforlaget}%
-      }
-      \strng{namehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{fullhash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{bibnamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authorbibnamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authornamehash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \strng{authorfullhash}{6e272a4ea52da77421f83eece9aa7c0e}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{Motivasjon i skolen: Teori, nyere forskning og praktiske implikasjoner, s 50.}
-      \field{year}{2026}
-    \endentry
-    \entry{ucar}{article}{}
+    \entry{lynum2015matte}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b5b0065192a4d723d050d5ce7c5f1b9f}{%
-           family={{University Corporation for Atmospheric Research}},
-           familyi={U\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c7ff1cb4ff8e98cc69e10467be4b979a}{%
+           family={Lynum},
+           familyi={L\bibinitperiod},
+           given={Sissel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{fullhash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{bibnamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authorbibnamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authornamehash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \strng{authorfullhash}{b5b0065192a4d723d050d5ce7c5f1b9f}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \strng{namehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{fullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{bibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorbibnamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authornamehash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \strng{authorfullhash}{c7ff1cb4ff8e98cc69e10467be4b979a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Talk Science Primer}
-      \field{urlday}{5}
-      \field{urlmonth}{10}
+      \field{day}{9}
+      \field{journaltitle}{Adresseavisen}
+      \field{month}{12}
+      \field{title}{Én av tre fikk 1 eller 2 i matte}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
       \field{urlyear}{2026}
-      \field{year}{2012}
+      \field{year}{2015}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://scied.ucar.edu/sites/default/files/media/documents/talkscience_primer_excerpt_2.pdf
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
       \endverb
       \verb{url}
-      \verb https://scied.ucar.edu/sites/default/files/media/documents/talkscience_primer_excerpt_2.pdf
+      \verb https://www.adressa.no/nyheter/trondelag/i/zr2W7K/en-av-tre-fikk-1-eller-2-i-matte
       \endverb
-    \endentry
-    \entry{werler2024}{book}{}
-      \name{editor}{2}{}{%
-        {{un=0,uniquepart=base,hash=99e442ce4bfa3a258312c26d6701fd4f}{%
-           family={Werler},
-           familyi={W\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef137832544631bbed245bcc46f98377}{%
-           family={Sæverot},
-           familyi={S\bibinitperiod},
-           given={Herner},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Bergen}%
-      }
-      \list{publisher}{1}{%
-        {Fagbokforlaget}%
-      }
-      \strng{namehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{fullhash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{bibnamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editorbibnamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editornamehash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \strng{editorfullhash}{0c73dd3d271f456bfbabbf22aa4031b3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{edition}{1}
-      \field{isbn}{978-82-450-4750-9}
-      \field{title}{Pedagogiske handlinger, s.134., s.121}
-      \field{year}{2024}
     \endentry
   \enddatalist
 \endrefsection

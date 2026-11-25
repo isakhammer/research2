@@ -9,6 +9,10 @@
 
 % Sideoppsett
 \usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{graphicx}
+\IfFileExists{phvr8t.tfm}{\usepackage[scaled=0.95]{helvet}}{}
+\usepackage{amsmath}
 
 % Referanser
 \usepackage[
@@ -18,29 +22,120 @@
 \addbibresource{references.bib}
 
 % Lenker
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{PPU3210 PPU heltid -- Semesteroppgave}
-\author{Isak Hammer}
-\date{\today}
+% Fyll inn kandidatnummer og ordantall før innlevering.
+\newcommand{\kandidatnummer}{[Fyll inn]}
+\newcommand{\antallord}{[Fyll inn]}
+% Emnenavn: https://www.uio.no/studier/emner/uv/ils/PPU3210/index.html
+\newcommand{\emnenavn}{PPU del 1 av 2: Undervisning og læringsforløp}
 
 \begin{document}
 
+% Oppgavetekst på side 0; selve besvarelsen begynner på side 1.
+\setcounter{page}{0}
+\begingroup
+\small
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45\baselineskip}
 
-\maketitle
+{\large\bfseries Semesteroppgave (PPU3210, PPU3510D, PROF3025)\par}
 
-\section*{Innledning av problemstilling}
+Semesteroppgaven er en individuell skriftlig oppgave som integrerer pedagogikk og fagdidaktikk A. I oppgaven skal du ta utgangspunkt i et undervisningsopplegg du har gjennomført i praksis. Du skal formulere en problemstilling som kan belyse utvalgte sider av dette, og analysere og drøfte undervisningsopplegget ut fra pedagogisk og fagdidaktisk teori.
 
-Hvordan kan jeg ivareta alle elevenes læringsbehov og bygge deres utholdenhet og evne til å stå i arbeidet med en vanskelig oppgave over tid. Dette er da en forskjell til T-matematikken  
+Problemstillingen skal relateres til ett eller flere av læringsutbyttene beskrevet i emnebeskrivelsen.
 
+\textbf{Formelle krav}
+
+Eksamensbesvarelsen skal ha et omfang på 3000--4000 ord (ikke medregnet forside, litteraturliste og vedlegg). Bruk siste versjon av APA for referanser og litteraturliste.
+
+Det er ikke anledning til å innhente video-, bilde- eller lyddata i forbindelse med semesteroppgaven. Dataene du samler inn (observasjonsnotater etc.), må lagres trygt, som anonymiserte data. Det betyr for eksempel at du ikke skal bruke ekte navn på informanter og på skole, heller ikke i filnavn. All informasjon fra praksis skal anonymiseres i selve oppgaven slik at det ikke er mulig å identifisere skole, lærere, elever og medstudenter. Dette gjelder både for semesteroppgaven og deloppgavene. Undersøkelsen kan ikke offentliggjøres eller brukes i andre sammenhenger enn eksamensbesvarelsen.
+
+Besvarelsen skal ha følgende oppbygning:
 \begin{itemize}
-    \item Kan man  ta hensyn til svake og sterke elever?
-        \begin{itemize}
-            \item Vi hadde en sterk elev, som faktisk var meget mottagelig for vanskelige oppgaver. Der jeg allerede tidlig tidlig i undervisningen samlet et dokument med eksamensoppgaver innen 
-            \item Vi hadde også en svak elev, som generelt hadde alminnelige regnevanskerm men som hadde ambisiøse planer om å bli veterinær.
-        \end{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \item Forside med kandidatnummer, emnekode og emnenavn, aktuelt semester og antall ord i oppgaven
+    \item Innledning med presentasjon av problemstillingen
+    \item Kort presentasjon av undervisningsopplegget, inkludert beskrivelse av gruppen/klassen
+    \item Analyse og drøfting av undervisningsopplegget ut fra pedagogisk og fagdidaktisk teori, samt erfaringer fra praksis
+    \item Begrunnede forslag til hvordan undervisningsopplegget kan videreutvikles
+    \item Konklusjon
+    \item Litteraturliste
+    \item Vedlegg: Undervisningsplan for opplegget. Bruk malen «\href{https://www.uv.uio.no/ils/studier/praksis/undervisningsplan.html}{Undervisningsplan}».
 \end{itemize}
 
+Ettfagsstudenter på lektorprogrammet (PROF3025) skal også legge ved liste over selvvalgt tilleggslitteratur. Tilleggslitteraturen må være godkjent av faglærer.
+
+Ettfagsstudenter på PPU deltid (PPU3510D) og PPU heltid (PPU3210) skal bruke ordinært pensum i sitt fag.
+
+Kilde: \href{https://www.uv.uio.no/ils/studier/eksamen/semesteroppgaven-bokmal.html?utm_source=chatgpt.com}{UiO -- Semesteroppgaven (bokmål)}.
+
+\clearpage
+\endgroup
+\setcounter{page}{1}
+
+% Egen forside på side 1, etter oppgaveteksten på side 0.
+\begingroup
+\thispagestyle{plain}
+\centering
+\vspace*{25mm}
+{\large Universitetet i Oslo\par}
+\vspace{18mm}
+{\Huge\bfseries Semesteroppgave\par}
+\vspace{10mm}
+{\Large \emnenavn\par}
+\vspace{25mm}
+{\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{@{}l@{\hspace{12mm}}l@{}}
+    \textbf{Kandidatnummer:} & \kandidatnummer \\
+    \textbf{Emnekode:} & PPU3210 \\
+    \textbf{Semester:} & Høst 2026 \\
+    \textbf{Antall ord:} & \antallord
+\end{tabular}\par}
+\clearpage
+\endgroup
+
+\section{Innledning og presentasjon av problemstillingen}
+\label{sec:innledning}
+
+I denne oppgaven så blir vi presentert en undervisningssituasjon innen T-matematikk for en klasse på 11 stk i yrkesfag i VG1 Havbruk blå. Generelt sett er yrkesfag kjent for å ha mindre matematisk modenhet \parencite{lynum2015matte}, men denne klassen er et unntak. 
+
+Da inntaket for å komme inn på denne skolen var godt over 5 i snitt fra 10.klasse, så var dette å anse som meget ambisiøse videregående elever der flere har snakket om å bli veterinær, jobbe innen oppdrettsnæringen eller som fisker. Tradisjonelt er
+disse yrkene kjent sett et mannlig yrke, men faktisk i denne klassen var vi tydelig dominert av jenter, der bare 3 av 11 elever var gutt. Alle i klassen er har også bevisst valgt T-matematikk istedenfor P-matematikk. Noen har nevnt at dette er på
+grunn av nysgjerrigheten, og andre ser det som nødvendighet for videre utdanning. En enighet er at alle elevene tenker dette faget kan nyttig i fremtiden.  
+
+Vi skal gjennom denne oppgaven prøve å presse denne gjengen litt ekstra, å se om de klarer å håndtere vanskeligere abstrakte oppgaver over tid, uten at det utvikler seg hjelpløshet.
+
+Da spesifikt må man ta hensyn til
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hvordan kan jeg ivareta alle elevenes læringsbehov og bygge deres utholdenhet og evne til å stå i arbeidet med en vanskelig oppgave over tid. Dette er da en forskjell til T-matematikken  
+Kan man  ta hensyn til svake og sterke elever?
+             Vi hadde en sterk elev, som faktisk var meget mottagelig for vanskelige oppgaver. Der jeg allerede tidlig tidlig i undervisningen samlet et dokument med eksamensoppgaver innen Vi hadde også en svak elev, som generelt hadde alminnelige regnevanskerm men som hadde ambisiøse planer om å bli veterinær.
 Her bant annet vil vi diskutere klasseledelse.
 
 
@@ -64,139 +159,8 @@ tidligere i undervisningen, eller
 bør de de først få oppleve mestring gjennom enkle oppgaver gradvis og bygge opp et grunnlag med mengdetrening.
 
 
-\section*{Beskrivelse}
-
-
-\subsection*{Kort beskrivelse av timen}%
-\label{sub:kort_beskrivelse}
-
-Bruke og forstå kvadratsetningene $(a+ b)^2 = a^2 + 2ab + b^2$. Bli
-  introdusert for egenskapene til andregradsuttrykk i ligninger. Elevene skal også bli kjent med
-  begrepet faktorisering av uttrykk og hvordan dette henger
-sammen med produktregelen, der $ a\cdot b = 0 \implies a = 0 \textit{ eller } b=0 $. Eleven skal
-også kunne faktorisere enkle andregradsuttrykk.
-
-Elevene har brukt mange undervisningstimer på å utlede den første og
-  den andre kvadratsetningen. De har nå god trening i å gå fra faktorisert form til et utvidet
-  uttrykk. I denne dobbeltimen skal vi prøve å lære elevene hvordan de kan gå fra et utvidet uttrykk
-  til faktorisert form. For å motivere elevene bruker vi produktregelen og ligninger som
-  utgangspunkt, slik at elevene må faktorisere uttrykket for å finne svaret. En av fallgruvene er at
-  produktregelen, som algebraisk sett er et enkelt resultat, kan virke svært abstrakt når vi
-  kombinerer den med faktorisering av andregradsuttrykk.
-
-For å lage en myk start, så prøvde vi veldig lett å introdusere konseptuelt hva det vil si å dele et tall eller en ukjent på seg selv.
-I dette tilfellet var progresjonen å forenkle
-\[
-\begin{aligned}
-    \text{1a)}\quad &\frac{4x}{x}  ,
-    \qquad \text{1b)}\quad \frac{x(x+1)}{(x+1)} , \\
-\end{aligned}
-\]
-
-Deretter ga læreren en gul lapp, der de selv skulle ved hjelp av de de har lært regne ut  
-\begin{equation}
-    \text{1c)}\quad &\frac{x^2 + x}{x+1}  \\
-\end{equation}
-
-Elevene ble da satt til å løse oppgaven på såkalt vertikal tavle, to og to:
-\begin{equation}
-    \text{1d) } \quad  \frac{x^2 + 2x + 1}{x+1}
-\end{equation}
-
- I andre time gikk vi frem på samme måte for å introdusere produktregelen, med følgende progresjon:
-
-\[
-\begin{aligned}
-    \text{2a)}\quad & 4x = 0,
-    \qquad \text{2b)}\quad 4(x-1) = 0, \\
-    \text{2c)}\quad &(x-1)(x-1)= 0
-\end{aligned}
-\]
-
-Etterpå skulle elevene jobbe alene med tilsvarende oppgaver i boka.
+\begin{tcolorbox}
     
-
-\subsection*{Hva gjorde læreren?}%
-\label{sub:hva_gjore_laereren}
-
-
-
-\subsection*{Hva gjorde elevene?}%
-\label{sub:hva_gjore_laereren}
-
-
-
-\subsection*{Hvilken forventet motivasjon og kunnskap hadde elevene}%
-\label{sub:hva_gjore_laereren}
-
-I denne klassen har elevene variert bakgrunn. De kommer fra ulike
-  ungdomskoler og sosiale livssituasjoner og har erfaring med ulike lærere og ulik
-  undervisningspraksis. Vi kan likevel forvente at de er kjent med ligninger og
-regneoperasjoner, men det vil antakelig være behov for oppfriskning og oppklaring av misforståelser.
-Det kan også være variasjon i disiplin og utholdenhet, da mange kan ha vansker med å holde
-oppmerksomheten over tid når ting blir vanskelige. Det vil si at det kan
-være svakere elever i rommet som både har lav utholdenhet og sliter med grunnleggende regneferdigheter.
-
- 
-
-
-
-\section*{Hva skjer i klassen?}
-
-%Observert flere ganger i videoen, ser vi elevene være ukonsentrerte. For eksempel ble det tydelig observert at den ene gruppa begynte å kaste kritt på hverandre, noen sover i timen, og på et tidspunkt ble det spilt musikk på toppen av et skap midt i undervisningen. Ut fra videoen kan det også oppleves at mange elever synes matematikk er et vanskelig fag.
-
-%%Som et tiltak for å forbedre klassemiljøet har hun laget en kontrakt som sier at elevene skal følge med i timen og utnytte tiden i skolen for læring, men som åpenbart ikke blir fulgt av elevene. Det skal dog sies at noen elever syntes dette er
-%forstyrrende, blant annet da det ble spilt musikk i undervisningen. En annen elev ble faktisk så frustrert over situasjonen og sa ``Kan vi gjøre dette i en annen time, nå har vi matte''. Dette er et viktig poeng, for det innebærer at det er elever i klassen som faktisk ønsker å lære og ikke bare leke.
-%
-%Gjennom bruk av klassekontrakten har læreren åpenbart brukt mye tid og energi på å tenke på hvordan klassemiljøet kan forbedres. Det er ingen tvil om at når hun først får oppmerksomheten og trigger nysgjerrigheten til elevene, så er de i stand til å lytte og lære. Da hun spurte en elev om hva arealet ble, og brukte litt tid på å tenke på riktig svar, begynte klassen å le litt.
-%
-%Det blir også observert at mens den ene eleven sover, sier hun at eleven ikke kan være trøtt når man gjør matematikk. Dette er verdt å merke seg, da søvn henger dypt sammen med fysiologiske behov for optimal læring. 
-%
-%Det er generelt relativt lite dialog mellom elev og lærer i undervisningen. For å komme til ordet i timen beordrer hun oppmerksomhet med å hysje på elever. Hun øker også strengheten ved at hvis ikke elever rekker opp hånda under felles diskusjon, så får eleven anmerkning. Så er spørsmålet om denne autoritære måten å håndtere elevene på vil hjelpe dem å arbeide i faget.
-
-\section*{Handlingsalternativ 1: Bygge relasjon mellom lærer og elev, og klassen som demokrati}
-
-%Et annet viktig spørsmål er hvordan relasjonen mellom lærer og elev påvirker motivasjonen. Læreren hysjer flere ganger på elevene, og elevene spøker samtidig med læreren og spiller musikk i undervisningen. Dette kan tyde på at læreren har utfordringer med å etablere tydelige rammer for undervisningen. I den andre videoen sover en elev, og læreren sier på en rolig måte at han må henge opp jakken. Det kan være flere grunner til at eleven sover i timen. Det kan for eksempel være mangel på søvn, noe som ikke nødvendigvis betyr at eleven ikke ønsker å lære. I stedet for å tolke atferden som manglende motivasjon, kan læreren undersøke hva som ligger bak. 
-
-% Her må læreren gå virkelig til verks for å bli kjent med elevene både i og utenfor klasserommet. Hvis en elev ofte sover i timen, kan læreren ta en prat med eleven og spørre om hva han gjør på kvelden, hvordan han sover, og om det er noe som gjør det vanskelig å møte uthvilt på skolen. 
-% Hvis man følger Maslows behovspyramide, vil man først søke å dekke fysiologiske behov, trygghet og tilhørighet før man frivillig oppsøker intellektuelle behov. Man kan derfor med fordel gå tidlig til verks dersom det er noe åpenbart man kan løse
-% nederst i pyramiden \parencite{skaalvik2021skolen}. Læreren bør spørre om trivsel, venner, hvordan de opplever skolen og hva de gruer seg til.  Også dette kan sees i syn av Maslows behovspyramide, da bygging av relasjon vil gi anerkjennelse og trygghet i klasserommet som senere er et godt verktøy for videre utvikling.
-% 
-% Elevene må kunne oppleve at det de sier blir tatt seriøst. Dersom elevene opplever at ideene deres blir møtt med respekt, kan det skape et tryggere læringsmiljø. Dette er særlig viktig i matematikk, hvor elever ofte må prøve seg frem og gjøre feil.
-% Forskning har vist at for et godt læremiljø, så er det viktig at elevene viser troverdighet til læreren i form av at deres ideer blir mottatt seriøst og at eventuell diskusjon er basert på faglig begrunnelse og ikke som individ \parencite{ucar}.
-% Dette er også viktig for danning av eleven, da dette skaper en demokratisk platform i klasserommet der hver mening skal bli hørt og man sammen skal utvikle egen og hverandres læring. 
-% Spesielt er dette essensielt ved elevenes valg om å forstyrre i timen, da man potensielt kan påvirke andre enn seg selv \parencite{werler2024}. I videoen kan man blant annet observere at enkelte elever er ufokuserte og lager støy i klasserommet. Som reaksjon sier en annen elev «nå har vi matte», og da er det viktig at man som demokratisk individ i klassen ikke bestemmer fokuset for resten av klassen.
-%   
-
-
-
-\section*{Handlingsalternativ 2: Individuell opplæring}
-% Hva er det som får disse elevene til å yte høy innsats i timen? Målorientering handler om at elever har ulike grunner til å arbeide med skolefag, og dermed ulike grunner til å yte høy eller lav innsats. I denne sammenhengen kan vi skille mellom læringsorientering og egoorientering. En læringsorientert elev er opptatt av å utvikle egen kompetanse og lære av feil. Eleven søker optimale utfordringer og ser på feil som noe man kan lære av. Forskning har vist at læringsorientert motivasjon kan bidra til større utholdenhet når eleven møter utfordrende problemer \parencite{skaalvik2026}.
-% 
-% Ved egoorientering står eleven selv mer i sentrum. Eleven arbeider for å bli positivt vurdert av andre eller for å være blant de beste. Eleven er ute etter å demonstrere kompetanse og legger større vekt på sosial sammenligning. Feil kan derfor
-% oppfattes som truende, og eleven kan lettere gi opp når oppgaven blir vanskelig \parencite{skaalvik2026}. Sett fra lys av Covingtons teori om selvverd, så viser det seg at egne evner, gode prestasjoner og personlig suksess har avgjørende betydning
-% for selvverd og videre motivasjon. Derfor må undervisningen tilpasses elevenes forutsetninger og ståsted, som potensielt kan være en strategi for å bygge opp motivasjon og selvverd. Her er det også viktig å dempe
-% elevenes tendenser til sosial sammenligning konkurranse, da man individuelt stiller på forskjellige plan og utfordringer og ofte er ikke alle vinnere \parencite{skaalvik2021skolen}.   
-% 
-% Å legge til rette for et godt læringsmiljø, der ingen spørsmål er dumme, er derfor viktig for å fremme nysgjerrighet i klassen. Dersom elevene opplever at det er trygt å komme med forslag og svare feil, kan det bli lettere å delta aktivt i matematikkundervisningen. En læringsorientert kultur kan dermed bidra til at elevene ser feil som en naturlig del av læringen, fremfor noe som bør unngås. Dog bør man være oppmerksom på at spørsmål fra enkeltelever kan skape reaksjoner i klassen. Som
-% klasseleder er det derfor viktig å håndtere slike reaksjoner på en måte som ikke bidrar til at det skjer igjen. Dersom slike reaksjoner oppstår, bør de tas opp tidlig for å hindre at det utvikler seg til mobbing, noe som kan ha en negativ innvirkning
-% på læringsmiljøet \parencite{werler2024}.
-
-
-
-\section{Avslutning}
-
-%Det vi ser er at det finnes tiltak som er verdt å prøve for klassen. Man kan først gå til verks å bygge relasjon med elev og lærer, og blant annet identifisere hvert elevs behov iforhold til Maslows behovshiarki muligens se om eleven er i en tilstand
-% der læring er mulig. Deretter kan man bruke klasserommet som en helhet å lære elevene å leve i et demokrati i klassen, der hver svar og forstyrrelse vil påvirke alle sammen. Et andre handlingsalternativ er å gi elevene
-% individuell opplæring, spesielt da vi kan se i lys fra Covingtons teori om selvverd at å identifisere elevens evner og potensiale for suksess er essensielt for videre motivasjon og selvverd.  
-% 
-
-\printbibliography
-
-\newpage
-
-\newpage
-\section{Problemstilling til semesteroppgave}%
 \label{sec:problemstilling_til_semesteroppgave}
 
 
@@ -229,5 +193,150 @@ Ekstra problemstilling:
 Kan matematisk modenhet utvikles hos de svake elevene når de introduseres for mer abstrakte og krevende ooppgaver
 tidligere i undervisningen, eller
 bør de de først få oppleve mestring gjennom enkle oppgaver gradvis og bygge opp et grunnlag med mengdetrening.
+    
+\end{tcolorbox}
+
+\section{Presentasjon av undervisningsopplegget}
+\label{sec:undervisningsopplegget}
+
+
+\subsection*{Kort beskrivelse av timen}%
+\label{sub:kort_beskrivelse}
+
+% Bruke og forstå kvadratsetningene $(a+ b)^2 = a^2 + 2ab + b^2$. Bli
+%   introdusert for egenskapene til andregradsuttrykk i ligninger. Elevene skal også bli kjent med
+%   begrepet faktorisering av uttrykk og hvordan dette henger
+% sammen med produktregelen, der $ a\cdot b = 0 \implies a = 0 \textit{ eller } b=0 $. Eleven skal
+% også kunne faktorisere enkle andregradsuttrykk.
+
+% Elevene har brukt mange undervisningstimer på å utlede den første og
+%   den andre kvadratsetningen. De har nå god trening i å gå fra faktorisert form til et utvidet
+%   uttrykk. I denne dobbeltimen skal vi prøve å lære elevene hvordan de kan gå fra et utvidet uttrykk
+%   til faktorisert form. For å motivere elevene bruker vi produktregelen og ligninger som
+%   utgangspunkt, slik at elevene må faktorisere uttrykket for å finne svaret. En av fallgruvene er at
+%   produktregelen, som algebraisk sett er et enkelt resultat, kan virke svært abstrakt når vi
+%   kombinerer den med faktorisering av andregradsuttrykk.
+
+% For å lage en myk start, så prøvde vi veldig lett å introdusere konseptuelt hva det vil si å dele et tall eller en ukjent på seg selv.
+% I dette tilfellet var progresjonen å forenkle
+% \[
+% \begin{aligned}
+%     \text{1a)}\quad &\frac{4x}{x}  ,
+%     \qquad \text{1b)}\quad \frac{x(x+1)}{(x+1)} , \\
+% \end{aligned}
+% \]
+
+% Deretter ga læreren en gul lapp, der de selv skulle ved hjelp av de de har lært regne ut  
+% \begin{equation}
+%     \text{1c)}\quad &\frac{x^2 + x}{x+1}  \\
+% \end{equation}
+
+% Elevene ble da satt til å løse oppgaven på såkalt vertikal tavle, to og to:
+% \begin{equation}
+%     \text{1d) } \quad  \frac{x^2 + 2x + 1}{x+1}
+% \end{equation}
+
+%  I andre time gikk vi frem på samme måte for å introdusere produktregelen, med følgende progresjon:
+
+% \[
+% \begin{aligned}
+%     \text{2a)}\quad & 4x = 0,
+%     \qquad \text{2b)}\quad 4(x-1) = 0, \\
+%     \text{2c)}\quad &(x-1)(x-1)= 0
+% \end{aligned}
+% \]
+
+% Etterpå skulle elevene jobbe alene med tilsvarende oppgaver i boka.
+    
+
+\subsection*{Hva gjorde læreren?}%
+\label{sub:hva_gjore_laereren}
+
+
+
+\subsection*{Hva gjorde elevene?}%
+\label{sub:hva_gjorde_elevene}
+
+
+
+\subsection*{Hvilken forventet motivasjon og kunnskap hadde elevene}%
+\label{sub:elevenes_forutsetninger}
+
+I denne klassen har elevene variert bakgrunn. De kommer fra ulike
+  ungdomskoler og sosiale livssituasjoner og har erfaring med ulike lærere og ulik
+  undervisningspraksis. Vi kan likevel forvente at de er kjent med ligninger og
+regneoperasjoner, men det vil antakelig være behov for oppfriskning og oppklaring av misforståelser.
+Det kan også være variasjon i disiplin og utholdenhet, da mange kan ha vansker med å holde
+oppmerksomheten over tid når ting blir vanskelige. Det vil si at det kan
+være svakere elever i rommet som både har lav utholdenhet og sliter med grunnleggende regneferdigheter.
+
+ 
+
+
+
+\section{Analyse og drøfting av undervisningsopplegget}
+\label{sec:analyse}
+
+\subsection{Erfaringer fra praksis}
+
+%Observert flere ganger i videoen, ser vi elevene være ukonsentrerte. For eksempel ble det tydelig observert at den ene gruppa begynte å kaste kritt på hverandre, noen sover i timen, og på et tidspunkt ble det spilt musikk på toppen av et skap midt i undervisningen. Ut fra videoen kan det også oppleves at mange elever synes matematikk er et vanskelig fag.
+
+%%Som et tiltak for å forbedre klassemiljøet har hun laget en kontrakt som sier at elevene skal følge med i timen og utnytte tiden i skolen for læring, men som åpenbart ikke blir fulgt av elevene. Det skal dog sies at noen elever syntes dette er
+%forstyrrende, blant annet da det ble spilt musikk i undervisningen. En annen elev ble faktisk så frustrert over situasjonen og sa ``Kan vi gjøre dette i en annen time, nå har vi matte''. Dette er et viktig poeng, for det innebærer at det er elever i klassen som faktisk ønsker å lære og ikke bare leke.
+%
+%Gjennom bruk av klassekontrakten har læreren åpenbart brukt mye tid og energi på å tenke på hvordan klassemiljøet kan forbedres. Det er ingen tvil om at når hun først får oppmerksomheten og trigger nysgjerrigheten til elevene, så er de i stand til å lytte og lære. Da hun spurte en elev om hva arealet ble, og brukte litt tid på å tenke på riktig svar, begynte klassen å le litt.
+%
+%Det blir også observert at mens den ene eleven sover, sier hun at eleven ikke kan være trøtt når man gjør matematikk. Dette er verdt å merke seg, da søvn henger dypt sammen med fysiologiske behov for optimal læring. 
+%
+%Det er generelt relativt lite dialog mellom elev og lærer i undervisningen. For å komme til ordet i timen beordrer hun oppmerksomhet med å hysje på elever. Hun øker også strengheten ved at hvis ikke elever rekker opp hånda under felles diskusjon, så får eleven anmerkning. Så er spørsmålet om denne autoritære måten å håndtere elevene på vil hjelpe dem å arbeide i faget.
+
+\section{Begrunnede forslag til forbedring av undervisningen}
+\label{sec:forbedringer}
+
+\subsection{Relasjoner og klassemiljø}
+
+%Et annet viktig spørsmål er hvordan relasjonen mellom lærer og elev påvirker motivasjonen. Læreren hysjer flere ganger på elevene, og elevene spøker samtidig med læreren og spiller musikk i undervisningen. Dette kan tyde på at læreren har utfordringer med å etablere tydelige rammer for undervisningen. I den andre videoen sover en elev, og læreren sier på en rolig måte at han må henge opp jakken. Det kan være flere grunner til at eleven sover i timen. Det kan for eksempel være mangel på søvn, noe som ikke nødvendigvis betyr at eleven ikke ønsker å lære. I stedet for å tolke atferden som manglende motivasjon, kan læreren undersøke hva som ligger bak. 
+
+% Her må læreren gå virkelig til verks for å bli kjent med elevene både i og utenfor klasserommet. Hvis en elev ofte sover i timen, kan læreren ta en prat med eleven og spørre om hva han gjør på kvelden, hvordan han sover, og om det er noe som gjør det vanskelig å møte uthvilt på skolen. 
+% Hvis man følger Maslows behovspyramide, vil man først søke å dekke fysiologiske behov, trygghet og tilhørighet før man frivillig oppsøker intellektuelle behov. Man kan derfor med fordel gå tidlig til verks dersom det er noe åpenbart man kan løse
+% nederst i pyramiden \parencite{skaalvik2021skolen}. Læreren bør spørre om trivsel, venner, hvordan de opplever skolen og hva de gruer seg til.  Også dette kan sees i syn av Maslows behovspyramide, da bygging av relasjon vil gi anerkjennelse og trygghet i klasserommet som senere er et godt verktøy for videre utvikling.
+% 
+% Elevene må kunne oppleve at det de sier blir tatt seriøst. Dersom elevene opplever at ideene deres blir møtt med respekt, kan det skape et tryggere læringsmiljø. Dette er særlig viktig i matematikk, hvor elever ofte må prøve seg frem og gjøre feil.
+% Forskning har vist at for et godt læremiljø, så er det viktig at elevene viser troverdighet til læreren i form av at deres ideer blir mottatt seriøst og at eventuell diskusjon er basert på faglig begrunnelse og ikke som individ \parencite{ucar}.
+% Dette er også viktig for danning av eleven, da dette skaper en demokratisk platform i klasserommet der hver mening skal bli hørt og man sammen skal utvikle egen og hverandres læring. 
+% Spesielt er dette essensielt ved elevenes valg om å forstyrre i timen, da man potensielt kan påvirke andre enn seg selv \parencite{werler2024}. I videoen kan man blant annet observere at enkelte elever er ufokuserte og lager støy i klasserommet. Som reaksjon sier en annen elev «nå har vi matte», og da er det viktig at man som demokratisk individ i klassen ikke bestemmer fokuset for resten av klassen.
+%   
+
+
+
+\subsection{Individuell opplæring}
+% Hva er det som får disse elevene til å yte høy innsats i timen? Målorientering handler om at elever har ulike grunner til å arbeide med skolefag, og dermed ulike grunner til å yte høy eller lav innsats. I denne sammenhengen kan vi skille mellom læringsorientering og egoorientering. En læringsorientert elev er opptatt av å utvikle egen kompetanse og lære av feil. Eleven søker optimale utfordringer og ser på feil som noe man kan lære av. Forskning har vist at læringsorientert motivasjon kan bidra til større utholdenhet når eleven møter utfordrende problemer \parencite{skaalvik2026}.
+% 
+% Ved egoorientering står eleven selv mer i sentrum. Eleven arbeider for å bli positivt vurdert av andre eller for å være blant de beste. Eleven er ute etter å demonstrere kompetanse og legger større vekt på sosial sammenligning. Feil kan derfor
+% oppfattes som truende, og eleven kan lettere gi opp når oppgaven blir vanskelig \parencite{skaalvik2026}. Sett fra lys av Covingtons teori om selvverd, så viser det seg at egne evner, gode prestasjoner og personlig suksess har avgjørende betydning
+% for selvverd og videre motivasjon. Derfor må undervisningen tilpasses elevenes forutsetninger og ståsted, som potensielt kan være en strategi for å bygge opp motivasjon og selvverd. Her er det også viktig å dempe
+% elevenes tendenser til sosial sammenligning konkurranse, da man individuelt stiller på forskjellige plan og utfordringer og ofte er ikke alle vinnere \parencite{skaalvik2021skolen}.   
+% 
+% Å legge til rette for et godt læringsmiljø, der ingen spørsmål er dumme, er derfor viktig for å fremme nysgjerrighet i klassen. Dersom elevene opplever at det er trygt å komme med forslag og svare feil, kan det bli lettere å delta aktivt i matematikkundervisningen. En læringsorientert kultur kan dermed bidra til at elevene ser feil som en naturlig del av læringen, fremfor noe som bør unngås. Dog bør man være oppmerksom på at spørsmål fra enkeltelever kan skape reaksjoner i klassen. Som
+% klasseleder er det derfor viktig å håndtere slike reaksjoner på en måte som ikke bidrar til at det skjer igjen. Dersom slike reaksjoner oppstår, bør de tas opp tidlig for å hindre at det utvikler seg til mobbing, noe som kan ha en negativ innvirkning
+% på læringsmiljøet \parencite{werler2024}.
+
+
+
+\section{Konklusjon}
+\label{sec:konklusjon}
+
+%Det vi ser er at det finnes tiltak som er verdt å prøve for klassen. Man kan først gå til verks å bygge relasjon med elev og lærer, og blant annet identifisere hvert elevs behov iforhold til Maslows behovshiarki muligens se om eleven er i en tilstand
+% der læring er mulig. Deretter kan man bruke klasserommet som en helhet å lære elevene å leve i et demokrati i klassen, der hver svar og forstyrrelse vil påvirke alle sammen. Et andre handlingsalternativ er å gi elevene
+% individuell opplæring, spesielt da vi kan se i lys fra Covingtons teori om selvverd at å identifisere elevens evner og potensiale for suksess er essensielt for videre motivasjon og selvverd.  
+% 
+
+\section{Litteraturliste}
+\label{sec:litteraturliste}
+% Litteraturlisten fylles automatisk når kildene siteres i teksten.
+\printbibliography[heading=none]
+
+% Vedlegg: kopi av den utfylte undervisningsplanen fra arbeidskrav 2.
+\input{vedlegg-undervisningsplan}
 
 \end{document}
