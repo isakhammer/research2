@@ -11,6 +11,7 @@
 \usepackage[a4paper, margin=2.5cm]{geometry}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{tikz}
 \IfFileExists{phvr8t.tfm}{\usepackage[scaled=0.95]{helvet}}{}
 \usepackage{amsmath}
 
@@ -105,9 +106,150 @@ Da inntaket for å komme inn på denne skolen var godt over 5 i snitt fra 10.kla
 disse yrkene kjent sett et mannlig yrke, men faktisk i denne klassen var vi tydelig dominert av jenter, der bare 3 av 11 elever var gutt. Alle i klassen er har også bevisst valgt T-matematikk istedenfor P-matematikk. Noen har nevnt at dette er på
 grunn av nysgjerrigheten, og andre ser det som nødvendighet for videre utdanning. En enighet er at alle elevene tenker dette faget kan nyttig i fremtiden.  
 
-Vi skal gjennom denne oppgaven prøve å presse denne gjengen litt ekstra, å se om de klarer å håndtere vanskeligere abstrakte oppgaver over tid, uten at det utvikler seg hjelpløshet.
+Vi skal gjennom denne oppgaven følge en økt å presse denne gjengen litt ekstra, gjerne mer enn de ville ha hatt fra ungdomskolen. Vi er ute etter å se om elevene klarer å håndtere abstrakte oppgaver over tid, uten at det utvikler seg
+hjelpløshet.
 
-Da spesifikt må man ta hensyn til
+Her ønsker vi å drøfte hvordan vi kan ta vare på både de sterke og de svake elevene, ved å legge trykk på rasjonell forståelse over instrumentell forståelse  av forskjellige typer matematisk kompetanser \parencite{NissJensen2002}. Vi vil også diskutere forskjellen på svake og
+sterke elever utviklingssone, og hvordan vi kan utvide den ved hjelp av hint (Vigotsky??).
+
+Vi vil også i oppgaven bruke Piagets induktive perspektiv beskrevet i \parencite[Side 51]{skaalvik2021skolen}, der vi diskuterer hvordan vi i denne undervisningstimen bruker assimilasjon og akkomodasjon for å utvikle meningsbærende kunnskapstrukturer
+om virkeligheten.  
+
+
+
+
+% Norsk bearbeiding av figur 4.1 i Niss og Jensen (2002, s. 45).
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[scale=1.4,
+    kompetanse/.style={font=\footnotesize\bfseries, align=center,
+      fill=white, inner sep=2pt, rounded corners=1pt},
+    gruppe/.style={font=\small, align=center, text width=4.5cm}
+  ]
+    % Overlappende kronblader viser at kompetansene henger sammen.
+    \foreach \vinkel in {22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5} {
+      \begin{scope}[rotate=\vinkel]
+        \path[fill=black!4] (1.75,0) ellipse [x radius=2.15cm, y radius=1.4cm];
+      \end{scope}
+    }
+    \foreach \vinkel in {22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5} {
+      \begin{scope}[rotate=\vinkel]
+        \draw[black!65, line width=0.55pt]
+          (1.75,0) ellipse [x radius=2.15cm, y radius=1.4cm];
+      \end{scope}
+    }
+
+    \node[kompetanse] at (112.5:2.7) {Tankegangs-\\kompetanse};
+    \node[kompetanse] at (157.5:2.7) {Problem-\\behandlings-\\kompetanse};
+    \node[kompetanse] at (202.5:2.7) {Modellerings-\\kompetanse};
+    \node[kompetanse] at (247.5:2.7) {Resonnements-\\kompetanse};
+    \node[kompetanse] at (67.5:2.7) {Representasjons-\\kompetanse};
+    \node[kompetanse] at (22.5:2.7) {Symbol- og\\formalisme-\\kompetanse};
+    \node[kompetanse] at (337.5:2.7) {Kommunikasjons-\\kompetanse};
+    \node[kompetanse] at (292.5:2.7) {Hjelpemiddel-\\kompetanse};
+
+    \node[gruppe] at (-2.3,4.7)
+      {Å \textbf{spørre og svare}\\i, med og om matematikk};
+    \node[gruppe] at (2.3,4.7)
+      {Å håndtere \textbf{språk og redskaper}\\i matematikk};
+    \draw[line width=0.65pt]
+      (-3.9,5.45) .. controls (-1.3,5.45) and (0,4.8) .. (0,3.75)
+      .. controls (0,4.8) and (1.3,5.45) .. (3.9,5.45);
+    \draw[line width=0.65pt]
+      (-3.9,-4.4) .. controls (-1.3,-4.4) and (0,-3.95) .. (0,-3.5)
+      .. controls (0,-3.95) and (1.3,-4.4) .. (3.9,-4.4);
+  \end{tikzpicture}
+  \caption{Elevenes åtte matematiske kompetansene definert av \textcite{NissJensen2002}. Her blir det skilt mellom kompetansen å 1) spørre og svare, spesifikt rettet mot resonnere og problemløsning, og 2) det å håndtere språk og redskaper i matematikk, i dette tilfellet notasjon, representasjon og bruk av hjelpermidler. Dette er tegnet som en blomst da mange av disse kompetansene overlapper.}
+  \label{fig:matematiske-kompetanser}
+\end{figure}
+
+
+% Norsk bearbeiding av figur 5 i Ball, Thames og Phelps (2008, s. 403).
+% Figurer og tekst er redigerbar LaTeX/TikZ-kode.
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    knowledgearea/.style={font=\small\sffamily, align=left, inner sep=0pt},
+    heading/.style={font=\scriptsize\sffamily\bfseries, align=center}
+  ]
+    \node[heading] at (-3.25,4.35) {FAGKUNNSKAP};
+    \node[heading] at (3.25,4.35) {FAGDIDAKTISK KUNNSKAP};
+
+    \draw[line width=0.65pt] (0,0) ellipse [x radius=6.5cm, y radius=3.9cm];
+    % Clip the partitions to the ellipse, as in the original figure.
+    \begin{scope}
+      \clip (0,0) ellipse [x radius=6.5cm, y radius=3.9cm];
+      \draw[line width=0.5pt] (-3.1,-4) -- (-3.1,4);
+      \draw[line width=0.5pt] (0,-4) -- (0,4);
+      \draw[line width=0.5pt] (3.4,-4) -- (3.4,4);
+      \draw[line width=0.5pt] (-6.5,0.1) -- (-3.1,0.1);
+      \draw[line width=0.5pt] (0,0.1) -- (3.4,0.1);
+    \end{scope}
+
+    \node[knowledgearea, text width=2.2cm] at (-4.2,1.2)
+      {Allmenn\\fagkunnskap\\(CCK)};
+    \node[knowledgearea, text width=1.9cm] at (-4.5,-1.05)
+      {Horisont-\\kunnskap};
+    \node[knowledgearea, text width=2.65cm] at (-1.55,0.2)
+      {Spesialisert\\fagkunnskap\\(SCK)};
+    \node[knowledgearea, text width=2.8cm] at (1.7,1.35)
+      {Kunnskap om\\fag og elever\\(KCS)};
+    \node[knowledgearea, text width=2.8cm] at (1.7,-1.5)
+      {Kunnskap om\\fag og\\undervisning (KCT)};
+    \node[knowledgearea, text width=1.9cm] at (5.0,0.1)
+      {Kunnskap\\om fag og\\læreplan};
+  \end{tikzpicture}
+  \caption[Undervisningskunnskap i matematikk]{Undervisningskunnskap i matematikk.
+    Norsk bearbeiding av figur~5 hos \textcite[s.~403]{BallThamesPhelps2008}.
+    \textbf{Allmenn fagkunnskap (CCK)} er matematikkunnskap som også brukes utenfor undervisning.
+    \textbf{Spesialisert fagkunnskap (SCK)} trengs særlig i lærerarbeidet, for eksempel for å vurdere elevers løsningsmetoder.
+    \textbf{Horisontkunnskap} gjelder sammenhenger mellom dagens og senere matematikk.
+    \textbf{Kunnskap om fag og elever (KCS)} gjelder elevers tenkemåter og misoppfatninger.
+    \textbf{Kunnskap om fag og undervisning (KCT)} gjelder valg av eksempler, forklaringer og representasjoner.
+    \textbf{Kunnskap om fag og læreplan} gjelder læreplaner og undervisningsmateriell.}
+  \label{fig:mathematical-knowledge-for-teaching}
+\end{figure}
+
+
+
+\begin{tcolorbox}
+    kanskje referere til hjelpløshet? Referere til horisontalkunnskap, den boblen der med kunnskap. Vi må også finne teori for rasjonell og instrumental forståelse. Gjerne også teori om utviklingssone med og uten hjelp (Vigotsky?)
+
+    Skriv i teori at Piaget anbefalte lærere å holde mindre forelesning, og heller legge til rette for elevaktive arbeidsformer der barnet selv trekker slutninger og generaliserer basert på autentiske erfaringer \cite[p. 53]{skaalvik2021skolen}.
+    Denne er kritisert siden det er lite sannsynlig at barnets nyskjerrighet i sin egen grad kan utvikle ny kunnskap, den må formidles. Hva er assimilasjon og hvordan henger det sammen med likevektsprinsippet når barnas nye erfaringsikke stemmermed
+    deres skjema? De endrer ved å bruke akkumulasjon  
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    Konstruktivistiske teorier
+     \begin{itemize}
+         \item \textbf{ Piagets induktive metode om Assimilasjon og akkumulasjon, og likevekstprinsippet} 
+    I Piagets teori leder til en metode der elevene oppdager kunnskaper og trekker slutninger med å gjøre utforsking og eksperimenter.
+
+    I brøkoppgaven \[ \frac{1+5/7}{4/7+8/7}+\frac12
+    \] kan eleven møte et ukjent uttrykk. Hos Piaget betyr \textbf{likevekt} at elevens eksisterende skjema, altså måten eleven forstår brøker på, strekker til for å tolke uttrykket. Når eleven
+    gjenkjenner den store brøkstreken som divisjon og bruker denne forståelsen i den nye oppgaven, skjer det en \textbf{assimilasjon}. Likevekten kan opprettholdes selv om utregningen er krevende.
+
+Likevektsprinisippet kan oppstå hvis eleven tror at nevneren må være et heltall, men ser at \(4/7+8/7\) står under brøkstreken. Da strekker det eksisterende skjemaet ikke helt til og derfor er ute av likevekt. \textbf{Akkommodasjon}  skjer først når eleven endrer forståelsen sin, for eksempel ved å innse at nevneren også kan være en brøk. Når det utvidede skjemaet gjør at uttrykket gir mening, har eleven nådd en ny likevekt \cite[p. 53]{skaalvik2021skolen}.
+\item \textbf{ Ausubels deduktive teori. } Kunnskap og tidligere erfaring lagres også her som kunnskapstrukturer.  Går for lærerstyrt undervisning.   
+    \begin{itemize}
+        \item Formmiddellæring. Inneholder presenteres i en ferdig systematisk form og inkorporeres inn i elevens kunnskapstruktur og krever ingen oppdagelse. 
+
+        \item Oppdagingslæring. Eleven oppdager ny læring, før det kan inkorporeres inni elevens kunnskapstruktur. Dog er dette en mer usikker metode å lære seg kunnskap på og tar tid.    
+    \end{itemize}
+    Begge læringene er gode, men det er formiddellæring som bære være primær. Ifølge Ausubel vill lærere gjøre rede for teori og regler først, og så demonstrere med eksempler.
+
+    Det som er viktig er at all ny læring blir satt i perspektiv med allerede eksisterende relevante kunnskapstrukturer. Hvis ikke dette blir gjort kan selv viktig kunnskap mye mye mening bli tolket som meningsløs. 
+
+    \textbf{Advanced organizer:} Ausubel anbefaler apetitt for å vekke de relevante kunnskapssttrukturene og gjøre dem mentalt klar og forberede dem i riktig retning. Ausubel avhenger også god aktivitet med læreren og eleven for at vi skal kunne vise
+kobling til relevante strukturer. For mer info se \cite[p. 55-56]{skaalvik2021skolen}.
+
+     \end{itemize}
+
+
+\end{tcolorbox}
+
+
 
 
 

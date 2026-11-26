@@ -8,7 +8,7 @@ Arbeidsliste over pensum og fagstoff samlet til PPU. Listen er ikke kontrollert 
 
 ## Litteratur
 
-- Ball, D. et al. – fullstendig referanse mangler.
+- Ball, D. L., Thames, M. H. & Phelps, G. (2008). [Content knowledge for teaching: What makes it special?](matematikk/Ball-Thames-og-Phelps-2008-Content-Knowledge-for-Teaching-What-Makes-It-Special.pdf). *Journal of Teacher Education, 59*(5), 389–407. https://doi.org/10.1177/0022487108324554
 - Olafsen/Maugesten, kapittel 1 – tittel, årstall og utgave mangler.
 
   **Notat til Ball et al. og Olafsen/Maugesten:** Relevant til temaet lærerkompetanse, særlig sammenhengen mellom lærerens matematikkunnskap og evnen til å legge til rette for elevenes læring.
@@ -36,6 +36,7 @@ Alle dokumentene finnes nå som PDF. Word- og PowerPoint-originalene er slettet 
 
 | Dokument | Sider |
 | --- | ---: |
+| [Ball, Thames og Phelps 2008 - Content Knowledge for Teaching: What Makes It Special?](matematikk/Ball-Thames-og-Phelps-2008-Content-Knowledge-for-Teaching-What-Makes-It-Special.pdf) | 19 |
 | [Evang - Klasseromssamtaler i matematikk - Del 1](matematikk/Evang-Klasseromssamtaler-i-matematikk-Del-1.pdf) | 12 |
 | [Evang - Klasseromssamtaler i matematikk - Del 2](matematikk/Evang-Klasseromssamtaler-i-matematikk-Del-2.pdf) | 14 |
 | [Hole 2026 - Arbeid med algebra](matematikk/Hole-2026-Arbeid-med-algebra.pdf) | 12 |
