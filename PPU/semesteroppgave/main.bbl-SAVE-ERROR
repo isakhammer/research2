@@ -66,6 +66,72 @@
       \verb 10.1177/0022487108324554
       \endverb
     \endentry
+    \entry{faldet2023vygotsky}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f86b1370bb0d645ec9ae04b5159d60ca}{%
+           family={Faldet},
+           familyi={F\bibinitperiod},
+           given={Ann-Cathrin},
+           giveni={A\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=863d629f07cfb039459201bd31844fc0}{%
+           family={Skrefsrud},
+           familyi={S\bibinitperiod},
+           given={Thor-André},
+           giveni={T\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33b60784088c9e27feac2cc0a9d3e7c3}{%
+           family={Somby},
+           familyi={S\bibinitperiod},
+           given={Hege\bibnamedelima Merete},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=f86b1370bb0d645ec9ae04b5159d60ca}{%
+           family={Faldet},
+           familyi={F\bibinitperiod},
+           given={Ann-Cathrin},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=863d629f07cfb039459201bd31844fc0}{%
+           family={Skrefsrud},
+           familyi={S\bibinitperiod},
+           given={Thor-André},
+           giveni={T\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=33b60784088c9e27feac2cc0a9d3e7c3}{%
+           family={Somby},
+           familyi={S\bibinitperiod},
+           given={Hege\bibnamedelima Merete},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cappelen Damm Akademisk}%
+      }
+      \strng{namehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{fullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{bibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{authorbibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{authornamehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{authorfullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{editorbibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{editornamehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{editorfullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Læring i et Vygotsky-perspektiv: Muligheter og konsekvenser for opplæringen}
+      \field{title}{Vygotsky i forskning og praksis: Hvorfor rette blikket mot et sosiokulturelt læringssyn?}
+      \field{year}{2023}
+      \field{pages}{9\bibrangedash 17}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.23865/noasp.191.ch1
+      \endverb
+    \endentry
     \entry{lynum2015matte}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c7ff1cb4ff8e98cc69e10467be4b979a}{%
@@ -226,6 +292,72 @@
       \range{pages}{19}
       \verb{doi}
       \verb 10.1177/0022487108324554
+      \endverb
+    \endentry
+    \entry{faldet2023vygotsky}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f86b1370bb0d645ec9ae04b5159d60ca}{%
+           family={Faldet},
+           familyi={F\bibinitperiod},
+           given={Ann-Cathrin},
+           giveni={A\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=863d629f07cfb039459201bd31844fc0}{%
+           family={Skrefsrud},
+           familyi={S\bibinitperiod},
+           given={Thor-André},
+           giveni={T\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33b60784088c9e27feac2cc0a9d3e7c3}{%
+           family={Somby},
+           familyi={S\bibinitperiod},
+           given={Hege\bibnamedelima Merete},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=f86b1370bb0d645ec9ae04b5159d60ca}{%
+           family={Faldet},
+           familyi={F\bibinitperiod},
+           given={Ann-Cathrin},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=863d629f07cfb039459201bd31844fc0}{%
+           family={Skrefsrud},
+           familyi={S\bibinitperiod},
+           given={Thor-André},
+           giveni={T\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=33b60784088c9e27feac2cc0a9d3e7c3}{%
+           family={Somby},
+           familyi={S\bibinitperiod},
+           given={Hege\bibnamedelima Merete},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cappelen Damm Akademisk}%
+      }
+      \strng{namehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{fullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{bibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{authorbibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{authornamehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{authorfullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{editorbibnamehash}{1280c9614c48efd24c65e990b9470a7f}
+      \strng{editornamehash}{f0c3a1585949c496f2610eae2e479d1a}
+      \strng{editorfullhash}{1280c9614c48efd24c65e990b9470a7f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Læring i et Vygotsky-perspektiv: Muligheter og konsekvenser for opplæringen}
+      \field{title}{Vygotsky i forskning og praksis: Hvorfor rette blikket mot et sosiokulturelt læringssyn?}
+      \field{year}{2023}
+      \field{pages}{9\bibrangedash 17}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.23865/noasp.191.ch1
       \endverb
     \endentry
     \entry{lynum2015matte}{article}{}
